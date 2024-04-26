@@ -50,12 +50,15 @@ This feature and the related APIs are still in development. Contributions are we
 
 ### 1. Issues with docker images
 
+
 #### 1.1 How to build the RAGFlow image from scratch?
+
 
 ```
 $ git clone https://github.com/infiniflow/ragflow.git
 $ cd ragflow
 $ docker build -t infiniflow/ragflow:v0.3.2 .
+
 $ cd ragflow/docker
 $ chmod +x ./entrypoint.sh
 $ docker compose up -d
@@ -148,7 +151,6 @@ Ignore this warning and continue. All system warnings can be ignored.
 You will not log in to RAGFlow unless the server is fully initialized. Run `docker logs -f ragflow-server`.
 
 *The server is successfully initialized, if your system displays the following:*
-
 ```
     ____                 ______ __
    / __ \ ____ _ ____ _ / ____// /____  _      __
@@ -329,6 +331,7 @@ You limit what the system responds to what you specify in **Empty response** if 
 
 ![](https://github.com/infiniflow/ragflow/assets/93570324/8cfb6fa4-8a97-415d-b9fa-b6f405a055f3)
 
+
 ### 4. How to run RAGFlow with a locally deployed LLM?
 
 You can use Ollama to deploy local LLM. See [here](https://github.com/infiniflow/ragflow/blob/main/docs/ollama.md) for more information. 
@@ -347,3 +350,4 @@ You can use Ollama to deploy local LLM. See [here](https://github.com/infiniflow
 ### Do I need to connect to Redis?
 
 No, connecting to Redis is not required to use RAGFlow. 
+
